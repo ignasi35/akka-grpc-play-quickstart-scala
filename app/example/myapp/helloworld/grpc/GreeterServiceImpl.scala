@@ -1,12 +1,11 @@
-package routers
+package example.myapp.helloworld.grpc
 
 import akka.stream.Materializer
-import example.myapp.helloworld.grpc.{HelloReply, HelloRequest}
-import javax.inject.Inject
+import javax.inject.{Inject, Named}
 
 import scala.concurrent.Future
 
-class HelloWorldRouter @Inject() (mat: Materializer) extends example.myapp.helloworld.grpc.AbstractGreeterServiceRouter(mat) {
+class GreeterServiceImpl @Inject()(mat: Materializer) extends GreeterService {
   private implicit val ec = mat.executionContext
 
   override def sayHello(in: HelloRequest): Future[HelloReply] =

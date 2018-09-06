@@ -6,7 +6,7 @@
 GET     /                    controllers.HomeController.index
 
 # ----     gRPC services    ----
-->      /                    routers.HelloWorldRouter
+->      /                    example.myapp.helloworld.grpc.GreeterServiceRouter
 # ---- end of gRPC services ----
 
 # Map static resources from the /public folder to the /assets URL path
