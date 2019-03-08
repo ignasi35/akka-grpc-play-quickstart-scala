@@ -50,7 +50,7 @@ libraryDependencies += guice
 
 // Test libraries
 val playVersion = play.core.PlayVersion.current
-val playGrpcVersion = "0.5.0+36-729a28ba+20190307-1146"
+val playGrpcVersion = "0.6.0"
 libraryDependencies += "com.lightbend.play"      %% "play-grpc-scalatest" % playGrpcVersion % Test
 libraryDependencies += "com.lightbend.play"      %% "play-grpc-specs2"    % playGrpcVersion % Test
 libraryDependencies += "com.typesafe.play"       %% "play-test"           % playVersion     % Test
